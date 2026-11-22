@@ -1,0 +1,134 @@
+/* ===== Calculator Page Styles ===== */
+
+/* Background */
+.calculator-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+/* Card */
+.calculator-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.calculator-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Header */
+.calculator-card .card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+/* Card Body */
+.calculator-card .card-body {
+    padding: 35px 30px;
+}
+
+/* Labels */
+.calculator-card label {
+    font-weight: 500;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Input Fields */
+.calculator-card .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.calculator-card .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    background: white;
+    outline: none;
+}
+
+/* Radio Buttons Group */
+.radio-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    font-weight: 500;
+    color: #555;
+}
+
+.radio-group label:hover {
+    border-color: #667eea;
+    background: #f0f4ff;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #667eea;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.radio-group label:has(input:checked) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+}
+
+/* Submit Button */
+.calculator-card .btn-success {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.calculator-card .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.calculator-card .btn-success:active {
+    transform: translateY(0);
+}
+
+/* Result Field */
+.result-field {
+    background: #fff9e6 !important;
+    border-color: #ffd700 !important;
+    font-weight: 600;
+    color: #333;
+}
